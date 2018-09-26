@@ -1,4 +1,48 @@
-p
+h1
+{	
+	text-shadow: 12px 12px 30px black;		/*ombre du texte*/
+	text-align: center;						/*alignement*/
+	font-weight: bold;						/*en gras*/
+    font-size: 40px; 						/* Titres de 40 pixels */
+    color: white;							/*couleur du titre*/
+}
+
+
+h2
 {
-	color: blue
+	font-size: 30px;
+	text-align: center;
+	color: black;
+	text-shadow: 5px 5px 50px white;
+
+}
+
+
+body 
+{
+	color:white;
+	background-image:url(backgroundimage.png);
+	background-attachment: scroll;				/*Rend le fond statique != scroll*/
+	font-family: arial;
+	text-align: center;
+	opacity: 1;
+}
+
+
+div
+{	
+	background-image: url(background2.jpg);
+	max-width : 100%;						/**/
+	box-shadow : 20px 20px 30px white;		/*ombre bordure*/
+	border : 10px black inset;				/*type de bordure*/
+	border-radius: 10% / 20%;				/*Arrondis bordure*/
+	
+
+
+}
+
+a:hover
+{
+   text-decoration: bold;
+   font-weight: bold;
 }
