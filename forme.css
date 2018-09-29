@@ -1,48 +1,96 @@
+body 
+{
+	
+	color:rgb(19, 13, 13);
+	background-image:url(back2.jpg);
+	background-attachment: scroll;
+	font-family: arial;
+	margin-top: 0em;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 0px;
+	
+	
+}
+
+													/* SECTIONS */
+#sectionTop
+{
+	display: flex;
+	justify-content: space-around;	/*Alignement horizontal*/	
+	align-items: center; 			/*Alignement vertical*/
+	background-image:url(footer08.jpeg);
+	box-shadow : 0px 40px 40px rgb(0, 0, 0);
+}
+
+
+section
+{	
+	background-image: url(back9.jpg);
+	max-width : 100%;							
+	box-shadow : 40px 40px 40px rgb(0, 0, 0);	/*ombre bordure*/
+	border : 10px black inset;	/*type de bordure*/
+	border-radius: 10% / 20%;	/*Arrondis bordure*/
+	font-size: 120%;
+	margin-left: 8%;	/*Créer des marges extérieur*/
+	margin-right: 8%;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: center;
+}
+
+#sectionBot
+{	
+	background-image: url(footer-wood-background.jpg);
+	border: solid black;
+	display: flex;		
+	justify-content: space-between;						/* A travailler */
+	align-items: center; 
+
+}
+
+
+													/* GESTION DES TITRES */
 h1
 {	
-	text-shadow: 12px 12px 30px black;		/*ombre du texte*/
-	text-align: center;						/*alignement*/
-	font-weight: bold;						/*en gras*/
-    font-size: 40px; 						/* Titres de 40 pixels */
-    color: white;							/*couleur du titre*/
+	text-shadow: 12px 12px 30px black;	/*ombre du texte*/
+	text-align: center;	/*alignement*/
+	font-weight: bold;	/*en gras*/
+    font-size: 40px; /* Titres de 40 pixels */
+	color: white;	/*couleur du titre*/
 }
 
 
 h2
 {
-	font-size: 30px;
+	font-size: xx-large;
 	text-align: center;
 	color: black;
-	text-shadow: 5px 5px 50px white;
-
+	text-shadow: 5px 5px 50px rgb(255, 255, 255);
 }
 
-
-body 
+													/* PAGES ANNEXES */
+form
 {
-	color:white;
-	background-image:url(backgroundimage.png);
-	background-attachment: scroll;				/*Rend le fond statique != scroll*/
-	font-family: arial;
 	text-align: center;
-	opacity: 1;
 }
 
-
-div
-{	
-	background-image: url(background2.jpg);
-	max-width : 100%;						/**/
-	box-shadow : 20px 20px 30px white;		/*ombre bordure*/
-	border : 10px black inset;				/*type de bordure*/
-	border-radius: 10% / 20%;				/*Arrondis bordure*/
-	
-
-
+													/* IMAGES ET LIENS */
+img	/*All pics*/
+{
+	border: groove black;
+	border-radius: 10%;
 }
 
-a:hover
+#photoChuck
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+a:hover		 /*Gras quand survol*/
 {
    text-decoration: bold;
    font-weight: bold;
 }
+
