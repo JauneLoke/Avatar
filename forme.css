@@ -43,10 +43,11 @@ section
 {	
 	background-image: url(footer-wood-background.jpg);
 	border: solid black;
-	display: flex;		
-	justify-content: space-between;						/* A travailler */
-	align-items: center; 
-
+	height:  200px;
+	block-size: 10em;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
 }
 
 
@@ -94,8 +95,3 @@ a:hover		 /*Gras quand survol*/
    font-weight: bold;
 }
 
-#logoBot
-{
-	
-	
-}
