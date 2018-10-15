@@ -51,7 +51,7 @@ section
 }
 
 
-													/* GESTION DES TITRES */
+	/* GESTION DES TITRES */
 h1
 {	
 	text-shadow: 12px 12px 30px black;	/*ombre du texte*/
@@ -70,13 +70,25 @@ h2
 	text-shadow: 5px 5px 50px rgb(255, 255, 255);
 }
 
-													/* PAGES ANNEXES */
+	/* PAGE FORMULAIRE */
+.joindrechuck
+{
+	margin: 0 auto;
+}
 form
 {
 	text-align: center;
+	background-color: rgba(2, 2, 2, 0.664);
+	width: 500px;
+	margin: 0 auto;
+	border-radius: 10%;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	color: white;
 }
 
-													/* IMAGES ET LIENS */
+	/* IMAGES ET LIENS */
+
 img	/*All pics*/
 {
 	border: groove black;
