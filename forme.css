@@ -32,8 +32,7 @@ section
 	border : 10px black inset;	/*type de bordure*/
 	border-radius: 10% / 20%;	/*Arrondis bordure*/
 	font-size: 120%;
-	margin-left: 8%;	/*Créer des marges extérieur*/
-	margin-right: 8%;
+	margin: 0 auto;
 	padding-left: 2%;
 	padding-right: 2%;
 	text-align: center;
@@ -71,9 +70,19 @@ h2
 }
 
 	/* PAGE FORMULAIRE */
+
+#contact
+{
+	margin-top: 80px;
+	margin-bottom: 0px;
+	text-align: left;
+	
+}
+
 .joindrechuck
 {
 	margin: 0 auto;
+	
 }
 form
 {
@@ -85,6 +94,7 @@ form
 	margin-bottom: 20px;
 	padding-bottom: 10px;
 	color: white;
+	padding-top: 1px;
 }
 
 	/* IMAGES ET LIENS */

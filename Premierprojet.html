@@ -11,7 +11,56 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	<!--Meta crossplateforme-->
   
 </head>
-
+<script>
+	function verif_formulaire()
+	
+	{
+	 if(document.formulaire.nom.value == "")  {
+	   alert("Veuillez entrer votre nom!");
+	   document.formulaire.nom.focus();
+	   return false;
+	  }
+	 
+	  if(document.formulaire.prenom.value == "")  {
+	   alert("Veuillez entrer votre prenom!");
+	   document.formulaire.nom.focus();
+	   return false;
+	  }
+	
+	 if(document.formulaire.courriel.value == "") {
+	   alert("Veuillez entrer une adresse mail valide!");
+	   document.formulaire.courriel.focus();
+	   return false;
+	  }
+	 if(document.formulaire.courriel.value.indexOf('@') == -1) {
+	   alert("Veuillez mettre l'@!");
+	   document.formulaire.courriel.focus();
+	   return false;
+	  }
+	 if(document.formulaire.age.value == "") {
+	   alert("L'age doit être un nombre!");
+	   document.formulaire.age.focus();
+	   return false;
+	  }
+	 var nombre = 1;
+	 for(i=0;i<document.formulaire.age.value.length;++i)
+	   if(document.formulaire.age.value.charAt(i) < "1"
+	   || document.formulaire.age.value.charAt(i) > "99")
+		nombre = -1;
+	 if(nombre == -1) {
+	   alert("votre age n'est pas correcte veuillez mettre un nombre !!!");
+		   document.formulaire.age.focus();
+	   return false;
+	   
+	  }
+	  
+	 if(document.formulaire.message.value == ""){
+	   alert("Votre message est trop court");
+	   document.formulaire.message.focus();
+	   return false;
+	  }
+	}
+	</script>
 <body>
 
 	<header>
@@ -83,7 +132,34 @@
 			</p>
 
 		</section>
-
+		<div id="contact">
+            <div class="joindreChuck">	<!-- Formulaire joindre Chuck -->
+                <!--method="post" != method"get"(limité à 255 caractères) action = "adresse de la page qui va traiter les info reçues en PHP quand on valide le formulaire"-->
+                <form name="formulaire" action="mailto:votreemail@***.***" method="post" onSubmit="return verif_formulaire()">  <!--post ou get-->
+    
+                        <p>Si vous souhaitez joindre Chuck, veuillez remplir ce formulaire :
+                        </p>
+						
+                        <label for="nom">Votre Nom</label>
+                        <input type="text" name="nom" id="nom" placeholder="Ex: Norris" />
+                        <br>
+                        <label for="Prénom">Votre Prénom</label>
+                        <input type="text" name="prenom" id="prenom" placeholder="Ex: Chuck" />
+                        <br>
+						<label for="age">Votre âge</label>
+						<input type="text" name="age" id="age" placeholder="10.000 ans">
+						<br>
+						<label for="mail">Votre mail</label>
+						<input type="email" name="courriel" id="courriel" placeholder="Ex: Chuck@gmail.com" />
+						<br>
+						<br>
+                        <label for="message">La prière que vous souhaitez envoyer a Chuck :</label> <br />
+						<textarea name="message" id="message" placeholder="Ex: J'aimerais être riche..." rows="10" cols="50"></textarea>
+						<br>
+						<input type="reset" value="Tout effacer"><input type="submit" value="Envoyer">
+                    </form>
+            </div>
+		</div>  
 
 		<br>
 		<br>
