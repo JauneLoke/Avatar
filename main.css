@@ -2,7 +2,7 @@ body
 {
 	
 	color:rgb(19, 13, 13);
-	background-image:url(back2.jpg);
+	background-image:url(images/back2.jpg);
 	background-attachment: scroll;
 	font-family: arial;
 	margin-top: 0em;
@@ -19,14 +19,14 @@ body
 	display: flex;
 	justify-content: space-around;	/*Alignement horizontal*/	
 	align-items: center; 			/*Alignement vertical*/
-	background-image:url(footer08.jpeg);
+	background-image:url(images/footer08.jpeg);
 	box-shadow : 0px 40px 40px rgb(0, 0, 0);
 }
 
 
 section
 {	
-	background-image: url(back9.jpg);
+	background-image: url(images/back9.jpg);
 	max-width : 100%;							
 	box-shadow : 40px 40px 40px rgb(0, 0, 0);	/*ombre bordure*/
 	border : 10px black inset;	/*type de bordure*/
@@ -40,7 +40,7 @@ section
 
 #sectionBot
 {	
-	background-image: url(footer-wood-background.jpg);
+	background-image: url(images/footer-wood-background.jpg);
 	border: solid black;
 	height:  200px;
 	block-size: 10em;
