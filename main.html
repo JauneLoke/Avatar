@@ -26,7 +26,7 @@
 
 		</div>
 	</header>
-
+	
 	<article>
 		<br>
 		<br>
@@ -84,8 +84,8 @@
 		</section>
 		<div id="contact">
             <div class="joindreChuck">	<!-- Formulaire joindre Chuck -->
-                <!--method="post" != method"get"(limité à 255 caractères) action = "adresse de la page qui va traiter les info reçues en PHP quand on valide le formulaire"-->
-                <form name="formulaire" action="mailto:votreemail@***.***" method="post" onSubmit="return verif_formulaire()">  <!--post ou get-->
+                <!--method="POST" (securisé)' != method"GET"(limité à 255 caractères) action = "adresse de la page qui va traiter les info reçues en PHP quand on valide le formulaire"-->
+                <form name="formulaire" action="main.php" method="POST" onSubmit="return verif_formulaire()">  <!--post ou get-->
     
                         <p>Si vous souhaitez joindre Chuck, veuillez remplir ce formulaire :
                         </p>
@@ -99,8 +99,8 @@
 						<label for="age">Votre âge</label>
 						<input type="text" name="age" id="age" placeholder="10.000 ans">
 						<br>
-						<label for="mail">Votre mail</label>
-						<input type="email" name="courriel" id="courriel" placeholder="Ex: Chuck@gmail.com" />
+						<label for="email">Votre mail</label>
+						<input type="email" name="email" id="email" required placeholder="Ex: Chuck@gmail.com" />
 						<br>
 						<br>
                         <label for="message">La prière que vous souhaitez envoyer a Chuck :</label> <br />
