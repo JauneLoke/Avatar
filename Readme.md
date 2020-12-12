@@ -1,3 +1,4 @@
-# Tout premier projet de début de formation.
+# Porjet Avatard
 
- > Mes premières lignes de code ont débutés ici!
+> Projet réalisé tout au début de ma formation.
+> Mes premières lignes de code ont débutés ici!
