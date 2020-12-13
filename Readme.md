@@ -1,6 +1,6 @@
 # Projet Avatar
 
-> Projet réalisé tout au début de ma formation
+> Projet réalisé tout au début de ma formation<br>
 > Mes premières lignes de code ont débutés ici
 
 Le projet est certainement aussi laid que le code mais je ne peux m'empêcher de le conserver par nostalgie...
